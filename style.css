@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+    font-size:14px;
+}
+body {
+    background-color: #F3EAE3;
+}
+.main {
+    width:600px;
+    height:450px;
+    display:flex;
+    flex-direction: row;
+    border-radius:15px;
+}
+.image {
+    border-radius:15px 0 0 15px;
+    background-color: red;
+    width: 300px;
+    height: 450px;
+    /* Set the default desktop image as a background */
+    background-image: url('images/image-product-desktop.jpg');
+    background-size: cover;
+}
+.content {
+    width:300px;
+    height:450px;
+    background-color: white;
+    border-radius:0 15px 15px 0;
+    display:flex;
+    flex-direction: column;
+}
+.perfume {
+    color:hsl(228, 12%, 48%);
+    letter-spacing: 7px;
+    font-size:.9rem;
+    margin:20px;
+}
+.title {
+    font-family: 'Fraunces', serif;
+    font-size:2.25rem;
+    margin:0 20px;
+
+}
+.info {
+    color:hsl(228, 12%, 48%);
+    margin:20px;
+}
+.price_container {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin:0 20px;
+}
+.big {
+    color:#3D8168;
+    font-family: 'Fraunces', serif;
+    font-size:2.25rem;
+}
+.small {
+    color:hsl(228, 12%, 48%);
+    margin-left:20px;
+}
+.btn {
+    background-color: #3D8168;
+    display:flex;
+    flex-direction: row;
+    height:50px;
+    width:235px;
+    justify-content: center;
+    align-items: center;
+    border-radius:10px;
+    margin:auto;
+}
+.btn a {
+    text-decoration: none;
+    color:white;
+}
+.btn:hover {
+    background-color: #0d3627;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:480px) {
+    .main {
+        position:absolute;
+        top:20px;
+        left:15px;
+        flex-direction: column;
+        width:343px;
+        height:610px;
+    }
+    .image {
+        background-image: url('images/image-product-mobile.jpg');
+        background-size: cover;
+        width:343px;
+        height:240px;
+        border-radius:15px 15px 0 0;
+    }
+    .content {
+        width:343px;
+        height:370px;
+        border-radius:0 0 15px 15px;
+    }
+
+}
